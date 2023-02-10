@@ -1,0 +1,44 @@
+.page-header{
+    padding: 5em 0;
+    text-align: center;
+}
+
+.page-main{
+    padding-bottom: 5em;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .caption{color: $color-gray-1;}
+    
+    .wp-block-columns{
+        padding: 1em 0;
+        
+        .wp-block-column:not(:first-child){
+            padding: 0 0 0 2em;
+            border-left: 1px solid $color-gray-2;
+        }
+
+        p{margin-top: .5em;}
+    }
+
+    @include breakpoint(phone){
+        .wp-block-columns{
+            gap: 0.5em;
+
+            &:not(:first-child){
+                padding: 0;
+                border: none;
+            }
+            
+            .has-text-align-right{text-align: left;}
+        }
+    }
+}
+
+.page-id-18{ // Resumè
+    .page-main h2{
+        padding: 1em 0 0.5em;
+        margin-top: 1.5em;
+        border-top: 1px solid $color-gray-2;
+    }
+}

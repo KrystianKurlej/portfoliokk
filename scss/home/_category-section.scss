@@ -1,0 +1,21 @@
+.category-section{
+    padding: 3em 0;
+    border-top: 1px solid $color-gray-2;
+
+    .section-header{
+        margin: .5em 0 2em;
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2em;
+        }
+
+        @include breakpoint(phone){
+            flex-direction: column;
+            gap: 1em;
+            align-items: inherit;
+        }
+    }
+}

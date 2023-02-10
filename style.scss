@@ -1,0 +1,26 @@
+/*
+Theme Name: Wordpress sample
+Author: Krystian Kurlej
+Version: 1.0
+Tested up to: 6.1
+Description: Code not for use without permission.
+*/
+
+@import './scss/abstracts/mixins';
+@import './scss/abstracts/variables';
+
+@import './scss/base/base';
+@import './scss/base/buttons';
+@import './scss/base/typography';
+
+@import './scss/home/category-section';
+@import './scss/home/latest-post';
+
+@import './scss/misc/footer';
+@import './scss/misc/navigation';
+
+@import './scss/templates/category';
+@import './scss/templates/contact-section';
+@import './scss/templates/page';
+@import './scss/templates/post-card';
+@import './scss/templates/single';

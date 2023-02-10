@@ -1,0 +1,52 @@
+button{
+    cursor: pointer;
+    border-radius: 5rem;
+    padding: 0.65em 1.3em;
+    outline: none;
+    border: none;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    @include breakpoint(phone){padding: 0.975em 1.95em;}
+}
+
+.btn-primary{
+    background-color: $color-black;
+    border: 1px solid $color-black;
+    color: $color-white;
+
+    &.btn-accent{
+        background-color: $color-accent;
+        border: 1px solid $color-accent;
+    }
+
+    &.btn-light{
+        background-color: $color-white;
+        border: 1px solid $color-white;
+        color: $color-black;
+    }
+
+    &:hover{
+        border: 1px solid $color-accent;
+        box-shadow: $shadow-hover;
+    }
+}
+
+.btn-secondary,.wp-element-button{
+    background-color: inherit;    
+    border: 1px solid $color-black;
+    color: $color-black;
+
+    &.btn-light{
+        color: $color-white;
+        border: 1px solid $color-white;
+    }
+
+    &:hover{
+        color: $color-white;
+        background-color: $color-accent;
+        border: 1px solid $color-accent;
+    }
+}

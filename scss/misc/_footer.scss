@@ -1,0 +1,20 @@
+.footer{
+    background-color: $color-black;
+    color: $color-white;
+    border-top: 1px solid $color-gray-1;
+    font-size: 1.2rem;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    *{font-size: 1.4rem;}
+
+    .footer-menu{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+}
